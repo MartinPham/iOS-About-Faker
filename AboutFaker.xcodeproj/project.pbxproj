@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A0A2CD515DFFB180066D677 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0A2CD415DFFB180066D677 /* Foundation.framework */; };
+		6A0A2CDF15DFFB180066D677 /* AboutFaker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A2CDE15DFFB180066D677 /* AboutFaker.mm */; };
+		6A0A2CEA15DFFEE60066D677 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0A2CE915DFFEE60066D677 /* UIKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		6A0A2CEC15E007CB0066D677 /* libSystem.B.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0A2CEB15E007CB0066D677 /* libSystem.B.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6A0A2CD115DFFB180066D677 /* AboutFaker.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = AboutFaker.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A0A2CD415DFFB180066D677 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6A0A2CD915DFFB180066D677 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		6A0A2CDA15DFFB180066D677 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		6A0A2CDC15DFFB180066D677 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		6A0A2CDD15DFFB180066D677 /* AboutFaker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AboutFaker-Prefix.pch"; sourceTree = "<group>"; };
+		6A0A2CDE15DFFB180066D677 /* AboutFaker.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AboutFaker.mm; sourceTree = "<group>"; };
+		6A0A2CE315DFFB180066D677 /* AboutFaker.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = AboutFaker.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/AboutFaker.plist; sourceTree = "<group>"; };
+		6A0A2CE915DFFEE60066D677 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6A0A2CEB15E007CB0066D677 /* libSystem.B.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.B.dylib; path = usr/lib/libSystem.B.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A0A2CCD15DFFB180066D677 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A0A2CEC15E007CB0066D677 /* libSystem.B.dylib in Frameworks */,
+				6A0A2CEA15DFFEE60066D677 /* UIKit.framework in Frameworks */,
+				6A0A2CD515DFFB180066D677 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A0A2CC515DFFB180066D677 = {
+			isa = PBXGroup;
+			children = (
+				6A0A2CEB15E007CB0066D677 /* libSystem.B.dylib */,
+				6A0A2CD615DFFB180066D677 /* AboutFaker */,
+				6A0A2CD315DFFB180066D677 /* Frameworks */,
+				6A0A2CD215DFFB180066D677 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A0A2CD215DFFB180066D677 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A0A2CD115DFFB180066D677 /* AboutFaker.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A0A2CD315DFFB180066D677 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A0A2CE915DFFEE60066D677 /* UIKit.framework */,
+				6A0A2CD415DFFB180066D677 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A0A2CD615DFFB180066D677 /* AboutFaker */ = {
+			isa = PBXGroup;
+			children = (
+				6A0A2CDE15DFFB180066D677 /* AboutFaker.mm */,
+				6A0A2CD715DFFB180066D677 /* Package */,
+				6A0A2CDB15DFFB180066D677 /* Supporting Files */,
+			);
+			path = AboutFaker;
+			sourceTree = "<group>";
+		};
+		6A0A2CD715DFFB180066D677 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				6A0A2CD815DFFB180066D677 /* DEBIAN */,
+				6A0A2CE015DFFB180066D677 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		6A0A2CD815DFFB180066D677 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				6A0A2CD915DFFB180066D677 /* control.txt */,
+				6A0A2CDA15DFFB180066D677 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		6A0A2CDB15DFFB180066D677 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A0A2CDC15DFFB180066D677 /* PackageVersion.plist */,
+				6A0A2CDD15DFFB180066D677 /* AboutFaker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A0A2CE015DFFB180066D677 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				6A0A2CE115DFFB180066D677 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		6A0A2CE115DFFB180066D677 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				6A0A2CE215DFFB180066D677 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		6A0A2CE215DFFB180066D677 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				6A0A2CE315DFFB180066D677 /* AboutFaker.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6A0A2CCE15DFFB180066D677 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6A0A2CD015DFFB180066D677 /* AboutFaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A0A2CE615DFFB180066D677 /* Build configuration list for PBXNativeTarget "AboutFaker" */;
+			buildPhases = (
+				6A0A2CCC15DFFB180066D677 /* Sources */,
+				6A0A2CCD15DFFB180066D677 /* Frameworks */,
+				6A0A2CCE15DFFB180066D677 /* Headers */,
+				6A0A2CCF15DFFB180066D677 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AboutFaker;
+			productName = AboutFaker;
+			productReference = 6A0A2CD115DFFB180066D677 /* AboutFaker.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A0A2CC715DFFB180066D677 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = 6A0A2CCA15DFFB180066D677 /* Build configuration list for PBXProject "AboutFaker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6A0A2CC515DFFB180066D677;
+			productRefGroup = 6A0A2CD215DFFB180066D677 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A0A2CD015DFFB180066D677 /* AboutFaker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A0A2CCF15DFFB180066D677 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A0A2CCC15DFFB180066D677 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A0A2CDF15DFFB180066D677 /* AboutFaker.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6A0A2CE415DFFB180066D677 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		6A0A2CE515DFFB180066D677 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		6A0A2CE715DFFB180066D677 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+				);
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AboutFaker/AboutFaker-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.0.114;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+		6A0A2CE815DFFB180066D677 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+				);
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AboutFaker/AboutFaker-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.0.114;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A0A2CCA15DFFB180066D677 /* Build configuration list for PBXProject "AboutFaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A0A2CE415DFFB180066D677 /* Release */,
+				6A0A2CE515DFFB180066D677 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A0A2CE615DFFB180066D677 /* Build configuration list for PBXNativeTarget "AboutFaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A0A2CE715DFFB180066D677 /* Release */,
+				6A0A2CE815DFFB180066D677 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A0A2CC715DFFB180066D677 /* Project object */;
+}

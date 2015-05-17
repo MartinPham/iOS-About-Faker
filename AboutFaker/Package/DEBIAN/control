@@ -1,0 +1,17 @@
+Package: com.nobitazzz.AboutFaker
+Name: AboutFaker
+Version: 1.0-1
+Description: 
+Section: Tweaks
+Depends: mobilesubstrate
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: NobitaZZZ
+dev: 
+Homepage: 
+Depiction: 
+Maintainer: 
+Icon: 
+
